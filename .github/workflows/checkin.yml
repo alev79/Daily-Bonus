@@ -1,9 +1,12 @@
 name: Daily Bonus
 
 on:
-  schedule:
-    - cron: '30 23 * * *'
-
+    workflow_dispatch:
+    schedule:
+        - cron: "01 04 * * *"
+    watch:
+        types: [started]
+        
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -3,7 +3,7 @@ name: Daily Bonus
 on:
     workflow_dispatch:
     schedule:
-        - cron: "01 4,5,6 * * *"
+        - cron: "01 4 * * *"
     watch:
         types: [started]
         
